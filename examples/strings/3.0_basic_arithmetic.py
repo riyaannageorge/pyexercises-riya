@@ -31,7 +31,7 @@ DELIVERABLE
 # and stops because division by zero is not possible.
 # Check: With 7 and 2, the division result was 3.5 as expected.
 # The program uses true division, so it does not round the result down to 3.
-# Check: When the second number was 0, the program displayed a message and stopped as expected.7
+# Check: When the second number was 0, the program displayed a message and stopped as expected.
 
 
 # Your code below
