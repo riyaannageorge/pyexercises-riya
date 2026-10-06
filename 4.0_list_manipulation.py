@@ -48,3 +48,7 @@ print("Sorted budgets:", sorted_budgets)
 
 average_budget = sum(campaign_budgets) / len(campaign_budgets)
 print("Average budget:", average_budget)
+# Check: For the first three budgets, I calculated (1200 + 2500 + 1800) / 3 = 1833.33.
+# The program gives the same result when calculating the average of those three items.
+first_three_average = sum(campaign_budgets[:3]) / len(campaign_budgets[:3])
+print("Average of first three budgets:", first_three_average)
