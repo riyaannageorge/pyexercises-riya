@@ -26,38 +26,36 @@ DELIVERABLE
 """
 
 # 1. In: The list of eight monthly marketing campaign budgets from exercise 4.0.
-# 2. Process: The program creates four different orders of the list and checks whether
-# the original list has been changed.
-# 3. Out: The four different orders and, at the end, the original list unchanged.
-# 4. My four orders are sorted ascending, sorted descending, reversed order, and
-# a reversed copy. sorted() and reversed() return new results, while reverse()
-# modifies the original list.
-# Check: The final original list is unchanged and matches the list from exercise 4.0.
-# sorted() and reversed() did not modify the original list.
-# reverse() modifies a list in place, but I used it on a copy so the original survived.
-
+# 2. Process: The program displays the list in four different orders and checks
+# whether the original list has been changed.
+# 3. Out: The four different orders and the original list at the end.
+# 4. My four orders are sorted ascending, sorted descending, reversed copy,
+# and reverse in place. sorted() and reversed() create new results without
+# modifying the original list. reverse() modifies the original list in place.
 
 # Your code below
 campaign_budgets = [1200, 2500, 1800, 3200, 1500, 2800, 2100, 3500]
 
 print("Original list:", campaign_budgets)
 
-# 1. Sorted ascending — creates a new list
+# 1. Sorted ascending - creates a new list
 ascending = sorted(campaign_budgets)
 print("Sorted ascending:", ascending)
 
-# 2. Sorted descending — creates a new list
+# 2. Sorted descending - creates a new list
 descending = sorted(campaign_budgets, reverse=True)
 print("Sorted descending:", descending)
 
-# 3. Reversed copy — does not change the original
+# 3. Reversed copy - creates a new list
 reversed_copy = list(reversed(campaign_budgets))
 print("Reversed copy:", reversed_copy)
 
-# 4. Reverse in place — modifies the list being used
-modified_list = campaign_budgets.copy()
-modified_list.reverse()
-print("Reverse in place:", modified_list)
+# 4. Reversed in place - modifies the original list
+campaign_budgets.reverse()
+print("Reversed in place:", campaign_budgets)
 
-# Check: the original list is still unchanged
+# Restore the original order so the list survives
+campaign_budgets.reverse()
+
+# Check: the original list is unchanged at the end
 print("Original list at the end:", campaign_budgets)
