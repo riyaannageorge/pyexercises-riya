@@ -135,3 +135,44 @@ Free Codespaces quota is 120 hours per month. This course needs about ten.
 ---
 
 Mike Castro Demaria — mike.castrodemaria-ext@skema.edu
+
+
+---
+
+# Campaign Performance Audit
+
+## Project Overview
+This project analyses digital marketing campaign performance using Python and CSV data. It calculates key marketing metrics to evaluate campaign effectiveness and identify the best-performing campaign.
+
+## Tools & Technologies
+- Python
+- CSV (Comma-Separated Values)
+- GitHub Codespaces
+
+## Key Performance Metrics
+- **CTR (Click-Through Rate):** Measures the percentage of impressions that resulted in clicks.
+- **CPA (Cost Per Acquisition):** Measures the cost of acquiring a conversion.
+- **ROAS (Return on Ad Spend):** Measures revenue generated for every euro spent on advertising.
+
+## Project Features
+- Reads campaign data from a CSV file.
+- Processes and cleans numerical data.
+- Handles campaigns with missing impressions.
+- Calculates CTR, CPA and ROAS.
+- Handles zero conversions and zero advertising costs.
+- Identifies the best-performing campaign based on ROAS.
+
+## Key Finding
+The Micro Influence campaign achieved the highest ROAS of 19.21, making it the best-performing campaign in the dataset.
+
+## How to Run
+1. Open the project in GitHub Codespaces.
+2. Make sure `campaigns_A.csv` is in the project folder.
+3. Run the following command:
+
+```bash
+python campaign_audit.py
+```
+
+4. View the campaign performance results in the terminal.
+
