@@ -44,3 +44,21 @@ The program successfully created result.csv containing:
 - Date
 
 The program was tested successfully and completed the campaign audit project.
+
+## 7. AI Tutor Setup and Troubleshooting
+
+I also attempted to configure the course AI tutor using an API provider.
+
+- I first tried configuring the tutor with different model providers.
+- I encountered a model availability error when using Gemini.
+- I then tried Groq and created an API key.
+- The tutor returned an authentication error (error code 1010).
+- I checked the API endpoint and model configuration in the `.env` file.
+- A direct test of the Groq models endpoint returned HTTP 200.
+- A direct test of the Groq chat endpoint also returned HTTP 200.
+- However, running `python tutor.py --check` continued to return the key refusal error.
+- I inspected the tutor's `ask_model()` function but did not resolve the issue.
+
+The AI tutor setup remained unsuccessful. I decided not to make further changes because the main campaign audit program was already working correctly.
+
+The campaign audit program was tested successfully and achieved a quiz score of 5/5.
